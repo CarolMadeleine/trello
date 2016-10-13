@@ -66,20 +66,20 @@ window.addEventListener("load", function(){
     textArea.classList.add("textArea");
     contenedorTarjeta.insertBefore(textArea, contenedorTarjeta.childNodes[0]);
 
-    //   botonCerrar.addEventListener("click", function(e){
-    //     e.preventDefault();
-    //     var tarjetaAñadida = document.createElement("div");
-    //     tarjetaAñadida.classList.add("tarjetaAñadida");
-    //     contenedor.insertBefore(tarjetaAñadida,contenedor.childNodes[1]);
+      botonCerrar.addEventListener("click", function(e){
+        e.preventDefault();
+        var tarjetaAñadida = document.createElement("div");
+        tarjetaAñadida.classList.add("tarjetaAñadida");
+        contenedor.insertBefore(tarjetaAñadida,contenedor.childNodes[1]);
 
-    //     var post = document.createElement("div");
-    //     post.classList.add("post");
-    //     post.innerText = textArea.value;
-    //     tarjetaAñadida.appendChild(post);
+        var post = document.createElement("div");
+        post.classList.add("post");
+        post.innerText = textArea.value;
+        tarjetaAñadida.appendChild(post);
 
-    //     contenedorTarjeta.classList.add("hidden");
-    //     añadirCard.classList.remove("hidden");
-    //   });
+        // contenedorTarjeta.classList.add("hidden");
+        // añadirCard.classList.remove("hidden");
+      });
     }
   }
 
