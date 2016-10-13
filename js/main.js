@@ -77,8 +77,8 @@ window.addEventListener("load", function(){
         post.innerText = textArea.value;
         tarjetaAñadida.appendChild(post);
 
-        // contenedorTarjeta.classList.add("hidden");
-        // añadirCard.classList.remove("hidden");
+        contenedorTarjeta.classList.add("hidden");
+        añadirCard.classList.remove("hidden");
       });
     }
   }
