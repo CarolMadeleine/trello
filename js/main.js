@@ -15,7 +15,7 @@ window.addEventListener("load", function(){
     e.preventDefault();
     boxForm();
     añadirForm.classList.add("hidden");
-    // lista.classList.remove("hidden");
+    lista.classList.remove("hidden");
   });
 });
   
