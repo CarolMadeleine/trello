@@ -40,30 +40,31 @@ window.addEventListener("load", function(){
     // newContenedor.classList.add("block", "newContenedor");
     // contenedorTrello.appendChild(newContenedor);
     // newContenedor.appendChild(lista);
-  //     añadirCard.addEventListener("click", function(e){
-  //       e.preventDefault();
-  //       añadirCard.classList.add("hidden");
-  //       añadirTarjeta();
-  //     });
+    
+      añadirCard.addEventListener("click", function(e){
+        e.preventDefault();
+        añadirCard.classList.add("hidden");
+        añadirTarjeta();
+      });
 
-    // function añadirTarjeta(){
-    // contenedorTarjeta = document.createElement("div");
-    // contenedorTarjeta.classList.add("contenedorTarjeta");
-    // contenedor.appendChild(contenedorTarjeta);
+    function añadirTarjeta(){
+    contenedorTarjeta = document.createElement("div");
+    contenedorTarjeta.classList.add("contenedorTarjeta");
+    contenedor.appendChild(contenedorTarjeta);
 
-    // var iconoLista= document.createElement("span");
-    // iconoLista.classList.add("icon-cross");
-    // contenedorTarjeta.insertBefore(iconoLista, contenedorTarjeta.childNodes[2]);
+    var iconoLista= document.createElement("span");
+    iconoLista.classList.add("icon-cross");
+    contenedorTarjeta.insertBefore(iconoLista, contenedorTarjeta.childNodes[2]);
 
-    // var botonCerrar = document.createElement("button");
-    // botonCerrar.classList.add("botonCerrar");
-    // contenedorTarjeta.insertBefore(botonCerrar, contenedorTarjeta.childNodes[1]);
-    // var textoBoton = document.createTextNode("Añadir");
-    // botonCerrar.appendChild(textoBoton);
+    var botonCerrar = document.createElement("button");
+    botonCerrar.classList.add("botonCerrar");
+    contenedorTarjeta.insertBefore(botonCerrar, contenedorTarjeta.childNodes[1]);
+    var textoBoton = document.createTextNode("Añadir");
+    botonCerrar.appendChild(textoBoton);
 
-    // var textArea= document.createElement("textarea");
-    // textArea.classList.add("textArea");
-    // contenedorTarjeta.insertBefore(textArea, contenedorTarjeta.childNodes[0]);
+    var textArea= document.createElement("textarea");
+    textArea.classList.add("textArea");
+    contenedorTarjeta.insertBefore(textArea, contenedorTarjeta.childNodes[0]);
 
     //   botonCerrar.addEventListener("click", function(e){
     //     e.preventDefault();
@@ -79,7 +80,7 @@ window.addEventListener("load", function(){
     //     contenedorTarjeta.classList.add("hidden");
     //     añadirCard.classList.remove("hidden");
     //   });
-    // }
+    }
   }
 
 
